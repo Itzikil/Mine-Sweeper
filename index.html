@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineSweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+
+    <!-- <div class="scores">
+        <input type="text" class="storage">
+        <p class="text"></p>
+        <button class="buttom"></button>
+    </div> -->
+    <section class="app-conainer">
+
+        <div class="dark-container">
+            <button class="dark-mode-btn" onclick="darkMode()">Dark mode</button>
+        </div>
+
+        <div class="secondary-features">
+            <div class="life"></div>
+            <div class="bestscore"><span>Best score!</span></div>
+        </div>
+
+        <div class="main-game">
+            <table>
+                <tbody class="mat" oncontextmenu="return false"></tbody>
+            </table>
+
+            <div class="btns">
+                <button onclick="chooseLvl(1)" class="lvl-btn">Easy</button>
+                <button onclick="chooseLvl(2)" class="lvl-btn">Medium</button>
+                <button onclick="chooseLvl(3)" class="lvl-btn">Hard</button>
+                <button onclick="chooseLvl(4)" class="lvl-btn">Expert</button>
+            </div>
+
+            <div class="clock-container">
+                <div class="timer">
+                    00:00
+                </div>
+                <p class="restart" onclick="init()" title="restart!">😄</p>
+            </div>
+        </div>
+
+        <div class="main-features">
+            <button class="safeclick feature-btn" onclick="safeClick(this)">Safe clicks 3</button>
+            <button class="hint feature-btn" onclick="hint()">Hint!</button>
+            <button onclick="mineExterminator()" class="mine-exterminator feature-btn">Mine Exterminator</button>
+            <button class="undo feature-btn" onclick="undo(true)">Undo</button>
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+
+</html>

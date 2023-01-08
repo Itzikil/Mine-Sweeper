@@ -1,0 +1,221 @@
+body {
+    background-color: rgb(219, 214, 214);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.6s;
+    margin: 0;
+    /* margin-inline: 32px; */
+    /* width: 100%; */
+}
+
+button {
+    border: 0px;
+    border-radius: 3px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-conainer {
+    display: flex;
+    gap: 20px;
+    width: 100vw;
+}
+
+.app-conainer>*:not(:first-child) {
+    flex: 1;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+table {
+    max-width: 400px;
+    max-height: 400px;
+    text-align: center;
+}
+
+.cell {
+    background-color: rgb(65, 176, 228);
+    width: 35px;
+    height: 35px;
+    border-radius: 2px;
+    cursor: default;
+}
+
+.mark {
+    background-color: rgb(166, 194, 194);
+}
+
+.mark:hover {
+    background-color: rgb(185, 209, 209);
+}
+
+.life {
+    width: 100px;
+    height: 20px;
+    background-color: rgba(189, 188, 188, 0.801);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4%;
+    padding: 10px;
+    box-shadow: 2px 3px 1px 0px rgb(99, 84, 84);
+}
+
+.restart {
+    margin: auto;
+    width: 25px;
+    font-size: larger;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px rgb(166, 194, 194);
+    border-radius: 50%;
+}
+
+.restart:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px rgb(45, 75, 68);
+}
+
+.timer {
+    width: 100px;
+    font-size: large;
+    text-align: center;
+    margin: auto;
+}
+
+.btns {
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lvl-btn {
+    width: 70px;
+    cursor: pointer;
+    box-shadow: 1px 2px rgb(164, 189, 183);
+}
+
+.lvl-btn:hover {
+    background-color: white;
+    height: 19px;
+}
+
+.bestscore {
+    padding-left: 15px;
+    padding-top: 15px;
+    width: 100px;
+    height: 120px;
+    background-color: rgb(103, 170, 170);
+    border-radius: 10%;
+    box-shadow: 0px 3px rgb(72, 95, 90);
+}
+
+.safeblink {
+    background-color: cadetblue;
+}
+
+
+.dark-mode {
+    background-color: rgb(56, 51, 51);
+    color: rgb(230, 226, 226);
+    /* transition: 0.5s; */
+}
+
+.dark-mode-btn {
+    background-color: rgb(56, 51, 51);
+    color: rgb(230, 226, 226);
+    box-shadow: 2px 3px rgb(56, 55, 55);
+    height: 22px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* .dark-mode:hover {
+    box-shadow: 0px 0px;
+    background-color: rgb(54, 51, 51);
+    height: 25px;
+} */
+
+.feature-btn {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+}
+
+.feature-btn:hover {
+    box-shadow: 2px 3px 1px 0px rgb(83, 82, 82);
+}
+
+.hint {
+    text-align: center;
+    background-color: rgb(211, 193, 193);
+    font-size: 1.4rem;
+}
+
+.hint:hover {
+    background-color: rgb(212, 185, 185);
+}
+
+.safeclick {
+    background-color: rgb(105, 138, 127);
+}
+
+.safeclick:hover {
+    background-color: rgb(76, 116, 102);
+}
+
+.mine-exterminator {
+    background-color: rgb(216, 131, 131);
+}
+
+.mine-exterminator:hover {
+    background-color: rgb(206, 94, 94);
+}
+
+.undo {
+    font-size: 1.4rem;
+}
+
+.undo:hover {
+    background-color: rgb(231, 226, 226);
+}
+
+@media (max-width:750px) {
+
+    .app-conainer>*:not(:first-child) {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:600px) {
+    .app-conainer {
+        flex-wrap: wrap;
+    }
+
+    .app-conainer>*:not(:first-child) {
+        margin-top: 0px;
+    }
+
+    .app-conainer>:first-child {
+        align-self: flex-start;
+    }
+
+    .dark-container {
+        width: 100%;
+    }
+
+    .secondary-features {
+        order: 3;
+    }
+
+    .main-game {
+        flex: 2;
+        min-width: 100%;
+    }
+}
