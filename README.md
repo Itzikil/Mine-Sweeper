@@ -1,3 +1,4 @@
 # Mine-Sweeper game
-With extra features
+the responsive With extra features
+
 https://itzikil.github.io/Mine-Sweeper/
